@@ -17,7 +17,7 @@
       <section class = "body-text-wrapper">
         <p id = "bio-body-text"> 
             He is a designer, a creative director,  and an educator. <br> 
-            Brian was born in Lexington, Massachusetts in 1959, where he fell in 
+            Brian Collins was born in Lexington, Massachusetts in 1959, where he fell in 
             love with typography, illustration, and installations at a young age. 
             He studied at the Massachusetts College of Art and Design and received 
             his BFA in 1982, later receiving  the college’s Distinguished Alumnus Award in 2004. 
