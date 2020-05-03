@@ -1,32 +1,165 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <body>
+      <div id = "app">
+
+        <div id = "nav">
+          <router-link to = "/"> Home </router-link> 
+          <router-link to = "/about"> About </router-link> 
+          <router-link to = "/timeline"> Timeline </router-link> 
+        </div>
+
+        <div id = "router-view">
+          <router-view />
+        </div>
+
+      </div>
+  </body>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="scss">
+
+/* fonts */
+@import '@/assets/styles/_colors.scss';
+@import "@/assets/styles/_reset";
+
+@font-face {
+    font-family: 'soehne-breit';
+    src: url('../src/assets/styles/fonts/soehne-breit-web-kraftig.woff') format('woff'),
+         url('../src/assets/styles/fonts/soehne-breit-web-kraftig.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'soehne';
+    src: url('../src/assets/styles/fonts/soehne-web-kraftig.woff') format('woff'),
+         url('../src/assets/styles/fonts/soehne-web-kraftig.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'soehne-buch';
+    src: url('../src/assets/styles/fonts/soehne-web-buch.woff') format('woff'),
+         url('../src/assets/styles/fonts/soehne-web-buch.woff2') format('woff2');
+}
+
+
+/* structure */
+
+body {
+  background-color: $color-background;
 }
 
 #nav {
-  padding: 30px;
+  float: right;
+  margin-right:5%;
+  margin-top:5%;
+
+  & a {
+      color:white;
+      font-family: 'soehne-breit';
+      text-decoration: none;
+      font-size: 1.3em;
+      padding:10px; /* padding between the nav text */
+    }
+
+  & a.router-link-exact-active {
+      color:$color-active-link;
+      background: linear-gradient(to right, #FFF 20%, rgb(134, 134, 134) 40%, rgb(128, 141, 135) 60%, #FFF 80%);
+      background-size: 200% auto;
+      
+      color: #000;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      animation: shine 2s linear infinite;
+      @keyframes shine {
+          to {
+            background-position: 200% center;
+          } }
+        }
+  
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/* applies to ALL pages */
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom:2%;
+
+  & #router-view {
+    padding:5%;
+  }
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+
+/* specific element */
+
+h1 {
+  font-family: 'soehne-breit';
+  color:white;
+  font-size: 3em;
 }
+
+h2 {
+  font-family: 'soehne-breit';
+  color:white;
+  font-size: 2em;
+}
+
+
+p {
+  font-family: 'soehne-buch';
+  color: $color-body-text;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+span {
+  font-family: 'soehne';
+  color: $color-body-text;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#title-text {
+  background: linear-gradient(to right, #FFF 20%, rgb(134, 134, 134) 40%, rgb(128, 141, 135) 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 3s linear infinite;
+  @keyframes shine {
+      to {
+        background-position: 200% center;
+      } }
+}
+
+/* section does not clash with nav, leaves space in between */ 
+section {
+  padding: 50px 0 50px 0;
+  // overflow: hidden;
+}
+
+/* some elements */ 
+
+// button {
+//     color: $color-button;
+//     font-size:.8em;
+//     font-family: 'soehne-breit';
+//     padding: 4px;
+//     background:  $color-background;
+//     transition: all .5s;
+//     border-radius: 12px;
+//     border: 1px solid $color-background ;
+
+//     &:hover{
+//       background: $color-map-active;
+//     }
+// }
+
 </style>
