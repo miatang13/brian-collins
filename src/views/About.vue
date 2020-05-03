@@ -3,7 +3,7 @@
     <div data-aos="fade-right" data-aos-duration="2000">
       <section id = "title-wrapper">
         <h1 id = "title-text"> Who he is. </h1>
-        <p>  one of the five  American Masters of Design, ever. </p>
+        <p>  One of the five  American Masters of Design, ever. </p>
       </section>
     </div>
     
