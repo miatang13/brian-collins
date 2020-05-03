@@ -3,8 +3,7 @@
      <div data-aos="fade-up" data-aos-duration="3000">
       <section id = "animation-wrapper">
         <vue-p5 @setup="setup"
-                @draw="draw"
-                @hover="mouseMoved"> </vue-p5>
+                @draw="draw"> </vue-p5>
       </section>
      </div>
  
@@ -73,7 +72,7 @@ export default {
 
       // sketch.text('Brian Collins', sketch.width/2, sketch.height/2)
       /* draw */
-      sketch.text('Current hour:\n' + hour + ":" + minute + ":" + second, sketch.width/2, sketch.height/2);
+      sketch.text('Current hour:\n' + hour + ":" + minute + ":" + second + "\n *placeholder*", sketch.width/2, sketch.height/2);
     },
     mouseMoved(sketch) {
       sketch.text('Are you trying your best', sketch.width/2, sketch.height/2)

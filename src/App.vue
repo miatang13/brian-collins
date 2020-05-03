@@ -6,6 +6,7 @@
           <router-link to = "/"> Home </router-link> 
           <router-link to = "/about"> About </router-link> 
           <router-link to = "/timeline"> Timeline </router-link> 
+          <router-link to = "/work"> Work </router-link> 
         </div>
 
         <div id = "router-view">

@@ -27,6 +27,12 @@ const routes = [
     component: () =>
      import("../views/Timeline.vue")
   },
+  {
+    path: "/work",
+    name: "Work",
+    component: () =>
+     import("../views/Work.vue")
+  },
   /* 404 route, navigate to this if no route is matched */
   {
     path: "*",

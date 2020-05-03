@@ -7,13 +7,13 @@
       </section>
     </div>
     
-    <div data-aos="fade-up" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
       <section id = "portrait-wrapper">
         <img src = '../assets/photos/portrait/bc_portrait_02.jpg' width = "100%">
       </section>
     </div>
 
-    <div data-aos="fade-up" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
       <section class = "body-text-wrapper">
         <p id = "bio-body-text"> 
             He is a designer, a creative director,  and an educator. <br> 
