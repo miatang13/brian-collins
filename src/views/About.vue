@@ -13,7 +13,7 @@
       </section>
     </div>
 
-    <div data-aos="fade-down" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-duration="2000">
       <section class = "body-text-wrapper">
         <p id = "bio-body-text"> 
             He is a designer, a creative director,  and an educator. <br> 
@@ -50,6 +50,10 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/_colors.scss';
 @import '@/assets/styles/aos.scss';
+
+// .about {
+//   background-color:white;
+// }
 
 .body-text-wrapper {
   padding-top: 50px;
