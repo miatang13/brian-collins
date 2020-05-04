@@ -166,6 +166,7 @@ export default {
 }
 
 #insanely-great{
+  font-family: 'soehne-breit';
   font-size: 6.5em;
   word-wrap:break-word;
   padding: 50px 0 50px 0;

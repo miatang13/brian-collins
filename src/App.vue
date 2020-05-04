@@ -122,7 +122,7 @@ p {
 }
 
 span {
-  font-family: 'soehne-breit';
+  font-family: 'soehne';
   color: $color-body-text;
   font-size: 1.2em;
   line-height: 1.5em;
