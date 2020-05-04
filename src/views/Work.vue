@@ -162,7 +162,7 @@ export default {
 }
 
 .end{
-    margin-top: 500px;
+    margin-top: 800px;
 }
 
 #insanely-great{
