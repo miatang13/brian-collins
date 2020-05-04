@@ -7,7 +7,7 @@
     </section>
   </div>
 
-  <div data-aos="fade-up" data-aos-duration="2000">
+  <div data-aos="flip-up" data-aos-duration="2000">
         <section id = "mapWrapper">
             <TimelineMap :showAll = "showAll" 
                         :checkClass = "checkClass()"
@@ -15,6 +15,7 @@
         </section>
   </div>
 
+  <!-- <div data-aos="flip-up" data-aos-duration="2000"> -->
   <div id = "buttonWrapper">
         <!-- <button @click="changeView" id = "view-option">  <span> {{ buttonMessage }} </span></button> -->
         <MultiRadioButton :defaultState ="buttonState"
@@ -34,6 +35,7 @@
                           :getState = "getState"
                           @click="changeView"/>
     </div>
+    <!-- </div> -->
 
     <section id = "timelineWrapper">
         <div data-aos="fade-down" data-aos-duration="3000">

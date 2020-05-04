@@ -9,8 +9,12 @@
   "dependencies": {
     "aos": "^2.3.4",
     "core-js": "^3.6.4",
+    "gsap": "^3.2.6",
+    "hover-effect": "^1.1.0",
+    "http-server": "^0.12.3",
     "jquery": "^3.5.0",
     "p5": "^1.0.0",
+    "three": "^0.116.1",
     "vue": "^2.6.11",
     "vue-p5": "^0.8.3",
     "vue-router": "^3.1.6",
@@ -23,6 +27,7 @@
     "@vue/cli-service": "^4.3.0",
     "node-sass": "^4.14.0",
     "sass-loader": "^8.0.2",
+    "three": "^0.116.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.43.0"
   },

@@ -108,6 +108,11 @@ h2 {
   font-size: 2em;
 }
 
+h3 {
+  font-family: 'soehne-breit';
+  color:$color-grey;
+  font-size: 1.5em;
+}
 
 p {
   font-family: 'soehne-buch';
@@ -117,7 +122,7 @@ p {
 }
 
 span {
-  font-family: 'soehne';
+  font-family: 'soehne-breit';
   color: $color-body-text;
   font-size: 1.2em;
   line-height: 1.5em;

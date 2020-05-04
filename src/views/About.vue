@@ -7,13 +7,16 @@
       </section>
     </div>
     
-    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-      <section id = "portrait-wrapper">
-        <img src = '../assets/photos/portrait/bc_portrait_02.jpg' width = "100%">
+    <div data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
+      <section>
+      <div class = "portrait-wrapper">
+        <!-- <img :src="`${publicPath}bc_portrait_01.jpg`" > -->
+        <img src = '../assets/photos/portrait/bc_portrait_02.jpg' width = "50%">
+      </div>
       </section>
     </div>
 
-    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+    <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
       <section class = "body-text-wrapper">
         <p id = "bio-body-text"> 
             He is a designer, a creative director,  and an educator. <br> 
@@ -28,6 +31,18 @@
       </section>
     </div>
 
+    <div data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
+      <section>
+      <div class = "portrait-wrapper">
+        <!-- <img :src="`${publicPath}bc_portrait_01.jpg`" > -->
+        <img src = '../assets/photos/portrait/bc_portrait_01.jpg' width = "50%">
+      </div>
+      </section>
+    </div>
+
+    <vue-p5 @setup="setup"
+            @draw="draw"> </vue-p5>
+
    <!--
     <section class = "video-wrapper">
       <iframe width="800px" height="500px" src="https://www.youtube.com/embed/bjSEofi5JoY"> </iframe>
@@ -36,15 +51,44 @@
   </div>
 </template>
 
+<!--<script src="../assets/js/three.min.js"></script>
+<script src="../assets/js/gsap.min.js"></script>-->
+
 <script>
 import AOS from 'aos'
+// import TweenMax from "gsap"
+// import * as Three from 'three'
+// import hoverEffect from 'hover-effect'
 
 export default {
     name: "About",
     created () {
-        AOS.init()
+        AOS.init();
+        // hoverEffect.init();
       },
+    // data() {
+    //   return {
+    //     publicPath: process.env.BASE_URL,
+    //     hoverDistort: null,
+    //     image1: '{publicPath}bc_portrait_02.jpg',
+    //     image2: '{publicPath}bc_portrait_01.jpg',
+    //     displacementImage: "`${publicPath}distortion.jpg`"
+    //   }
+    // },
+  //   methods: { 
+  //     hover: function() {
+  //      this.hoverDistort = new hoverEffect({
+  //           parent: document.getElementById('portrait-wrapper'),
+  //           intensity: 0.3, 
+  //           image1: this.image1,
+  //           image2: this.image2,
+  //           displacementImage: this.displacementImage });
+  //  }},
+  //   mounted(){
+  //   this.hover();
+  // }
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -69,9 +113,10 @@ export default {
   max-width: 70%;
 }
 
-// #title-wrapper {
-//   animation: comeIn 3s ease-in-out 0s;
-// }
+.portrait-wrapper {
+    // height: 500px;
+    margin-left: 400px;
+ }
 
 @keyframes comeIn { 
     from { 

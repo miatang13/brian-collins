@@ -81,7 +81,7 @@ export default {
 
 label {
     font-family:'soehne-breit';
-    font-size:.8em;
+    font-size:.7em;
     color:$color-grey-light;
 }
 
