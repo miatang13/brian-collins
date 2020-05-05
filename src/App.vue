@@ -128,6 +128,16 @@ span {
   line-height: 1.5em;
 }
 
+a {
+  font-family: 'soehne';
+  color: $color-body-text;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+
+/* special classes */
+
 #title-text {
   background: linear-gradient(to right, #FFF 20%, rgb(134, 134, 134) 40%, rgb(128, 141, 135) 60%, #FFF 80%);
   background-size: 200% auto;

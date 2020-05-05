@@ -602,7 +602,7 @@ path {
   z-index: -1;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 4s linear 2s forwards;
+  animation: dash 3s linear 2s forwards;
 
   &.can-be-active{
     fill: $color-map-maybe-active-fill;

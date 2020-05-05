@@ -61,9 +61,10 @@ export default {
 
       /* text styling */
       sketch.textSize(150);
-      sketch.fill('#ff6600');
+      sketch.fill('white');
       sketch.textFont('soehne-breit');
       sketch.textAlign(sketch.CENTER, sketch.CENTER);
+      
 
       /* time */
       let second = sketch.second();
@@ -71,6 +72,14 @@ export default {
       let hour = sketch.hour();
 
       sketch.text(sketch.frameCount, sketch.width/2, sketch.height/2)
+
+      if (sketch.frameCount > 150) {
+         sketch.background('black');
+         sketch.textSize(80);
+         sketch.text("Are you trying your best?", sketch.width/2, sketch.height/2)
+      }
+
+      // sketch.ellipse(sketch.mouseX, sketch.mouseY, 55, 55);
       // sketch.text('Brian Collins', sketch.width/2, sketch.height/2)
       /* draw */
       // sketch.text('Current hour:\n' + hour + ":" + minute + ":" + second + "\n *placeholder*", sketch.width/2, sketch.height/2);

@@ -24,23 +24,34 @@
             </div>
         </div>
        
-        <div class = "selfmade-wrapper">
-            <div  data-aos="flip-up" data-aos-duration="1500" >
+        <div class = "equinox-wrapper">
+            <div >
                 <section class = "workphoto-wrapper">
-                    <img src = "../assets/photos/work/selfmade_1.jpg" width = "50%">
+                    <img src = "../assets/photos/work/equinox_1.jpg" width = "50%">
                 </section>
             </div>
 
             <div  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
-            <div id="work-text-wrapper">
-                <h3> Self-made</h3>
-            </div>
+                <div id="work-text-wrapper">
+                    <h3> Equinox Hotels </h3>
+                </div>
             </div>
             
-            <div  data-aos="flip-up" data-aos-duration="1500" >
-                <section class = "workphoto-wrapper"> 
-                    <img src = "../assets/photos/work/selfmade_2.jpg" width = "50%">
-                </section>
+            <!-- data-aos="flip-up" data-aos-duration="1500"  -->
+            <div class = "flipcard-wrapper">
+                <div class = "flipcard" >
+                    <section class = "frontcard"> 
+                        <img src = "../assets/photos/work/equinox_2.jpg" width = "100%">
+                    </section>
+                    <section class = "backcard">
+                        <p> COLLINS defined the Equinox audience as those who are 
+                            constantly striving to be better than who they were yesterday. 
+                            It’s through this pursuit that they are led to opposing extremes: 
+                            Discipline and indulgence. Relentlessness and relaxation. 
+                            Excess and absence.  </p>
+                        <a href = "https://www.wearecollins.com/work/equinox-hotels/"> More on the project &#8600; </a>
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -50,23 +61,34 @@
             </section>
         </div>
 
-        <div class = "airbnb-wrapper">
-            <div  data-aos="flip-up" data-aos-duration="1500" >
+        <div class = "sixofive-wrapper">
+            <div>
                 <section class = "workphoto-wrapper">
-                    <img src = "../assets/photos/work/airbnb_1.jpg" width = "50%">
+                    <img src = "../assets/photos/work/605_2.gif" width = "50%">
                 </section>
             </div>
 
             <div  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
-            <div id="work-text-wrapper">
-                <h3> Airbnb </h3>
-            </div>
+                <div id="work-text-wrapper">
+                    <h3> 605 </h3>
+                </div>
             </div>
             
-            <div  data-aos="flip-up" data-aos-duration="1500" >
-                <section class = "workphoto-wrapper"> 
-                    <img src = "../assets/photos/work/airbnb_2.jpg" width = "50%">
-                </section>
+            <!-- data-aos="flip-up" data-aos-duration="1500"  -->
+            <div class = "flipcard-wrapper">
+                <div class = "flipcard" >
+                    <section class = "frontcard"> 
+                        <img src = "../assets/photos/work/605_1.jpg" width = "100%">
+                    </section>
+                    <section class = "backcard">
+                        <p> COLLINS developed and launched the 605 brand, a new data 
+                            analytics and audience measurement company. They worked 
+                            with the 605 team to determine what made their company so unique.
+                            Together they realized that their commitment to 
+                            transparency was paramount — and unlike any other in the market.  </p>
+                        <a href = "https://www.wearecollins.com/work/605/"> More on the project &#8600; </a>
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -77,7 +99,7 @@
         </div>
 
         <div class = "spotify-wrapper">
-            <div  data-aos="flip-up" data-aos-duration="1500" >
+            <div >
                 <section class = "workphoto-wrapper">
                     <img src = "../assets/photos/work/spotify_1.jpg" width = "50%">
                 </section>
@@ -85,14 +107,24 @@
 
             <div  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                 <div id="work-text-wrapper">
-                    <h3> Spotify </h3>
+                    <h3> 605 </h3>
                 </div>
             </div>
             
-            <div data-aos="fade-left" data-aos-duration="1500" >
-                <section class = "workphoto-wrapper"> 
-                    <img src = "../assets/photos/work/spotify_2.jpg" width = "50%">
-                </section>
+            <!-- data-aos="flip-up" data-aos-duration="1500"  -->
+            <div class = "flipcard-wrapper">
+                <div class = "flipcard" >
+                    <section class = "frontcard"> 
+                        <img src = "../assets/photos/work/spotify_2.jpg" width="100%">
+                    </section>
+                    <section class = "backcard">
+                        <p> For the largest music streaming service, Spotify, COLLINS’ answer emerged directly 
+                            from their strategic platform — when an individual makes a personal connection 
+                            with a song, their reaction is to cry, cheer, scream, sing, jump, or get chills — or, as 
+                            they phrased it, “burst” with emotion. The identity graphically captured that moment. </p>
+                        <a href = "https://www.wearecollins.com/work/spotify/"> More on the project &#8600; </a>
+                    </section>
+                </div>
             </div>
         </div>
 
@@ -157,9 +189,6 @@ export default {
     height: 500px;
 }
 
-.selfmade-wrapper{
-    // border:1px solid white;
-}
 
 .end{
     margin-top: 800px;
@@ -186,5 +215,34 @@ export default {
         background-position: 200% center;
       } }
 }
+
+.flipcard-wrapper{
+    position: relative;
+}
+
+.flipcard{
+    transform-style: preserve-3d;
+    padding-bottom: 500px;
+    transition: all 1.2s ease-in-out;
+    width: 50%;
+}
+
+.flipcard:hover {
+    transform: rotateY(180deg);
+}
+
+.frontcard {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+}
+
+.backcard{
+    position: absolute;
+    backface-visibility:hidden;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
 
 </style>
