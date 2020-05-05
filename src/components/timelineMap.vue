@@ -563,6 +563,29 @@ export default {
   @return mix(black, $color, $percentage);
  }
 
+@mixin gradient-animation( $start, $end, $transTime ){
+  background-size: 100%;
+  background-image: linear-gradient($start, $end);
+  position: relative;
+  z-index: 100;
+  &:before {
+    background-image: linear-gradient($end, $start);
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity $transTime;
+  }
+  &:hover {
+     &:before {
+       opacity: 1; 
+     }
+  }
+}
 
 #map-svg {
   stroke-linejoin: round; 
@@ -594,10 +617,12 @@ path {
 //   }
 
   &.current-active {
-     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	  background-size: 400% 400%;
+   //   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	//   background-size: 400% 400%;
      animation: active-gradient 3s ease infinite;
-     stroke: $color-map-maybe-active-stroke;
+   //   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   //   stroke: $color-map-maybe-active-stroke;
+   //   animation: gradient 3s ease infinite;
   }
 }
 
@@ -632,11 +657,13 @@ path {
    } 40% {
       fill:$color-map-active;
    } 60% {
-      fill: rgb(226, 51, 51);
+      fill: rgba(131,58,180,1);
    } 80% {
-      fill: rgb(172, 255, 172);
+      fill: rgba(253,29,29,1);
    }
 }
+
+
 
 @keyframes gradient {
 	0% {
