@@ -70,9 +70,10 @@ export default {
       let minute = sketch.minute();
       let hour = sketch.hour();
 
+      sketch.text(sketch.frameCount, sketch.width/2, sketch.height/2)
       // sketch.text('Brian Collins', sketch.width/2, sketch.height/2)
       /* draw */
-      sketch.text('Current hour:\n' + hour + ":" + minute + ":" + second + "\n *placeholder*", sketch.width/2, sketch.height/2);
+      // sketch.text('Current hour:\n' + hour + ":" + minute + ":" + second + "\n *placeholder*", sketch.width/2, sketch.height/2);
     },
     mouseMoved(sketch) {
       sketch.text('Are you trying your best', sketch.width/2, sketch.height/2)

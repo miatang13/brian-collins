@@ -448,7 +448,11 @@
 </div>
 
 <div id = "modal-wrapper">
-    <span id = "overlay-modal" v-if="ModalOn"> {{ currentQuote }} </span>
+    <span id = "overlay-modal" v-if="ModalOn"> {{ this.currentQuote.job }} <br> 
+                                               {{ this.currentQuote.company }} <br> 
+                                               {{ this.currentQuote.time }} <br> 
+                                               {{ this.currentQuote.location }} <br> 
+     </span>
 </div>
 
 </div> <!-- svg-modal-wrapper -->
@@ -474,12 +478,31 @@ export default {
     data() {
       return {
         ModalOn: false,
-        currentQuote: "",
-        quotes: { CA : "Advisory Board for Graduate Design Program <br> @ ArtCenter College of Design Jan 2016-Present (4 yrs 4 months) Pasadena, California, United States",
-                  MN : "Principal @Collins Design Sept 1992 - Dec 1995 Design Business Development @Duffy & Partners Jan 1990 - Sep 1992 Minneapolis, Minnesota",
-                  MA : "🎂Hometown @ Lexington, Massachusetts",
-                  NY : "Chief Creative Officer @ COLLINS, Professor @ SVA, National Board of Directors @ The One Club for Creativity (Present) Chief Creative Officer @ Ogilvy & Mather Worldwide ",
-               }
+        currentQuote: null,
+        CA: {
+            job: "Advisory Board for Graduate Design Program",
+            company: "@ ArtCenter College of Design",
+            time: "Jan 2016-Present",
+            location: "Pasadena, California"
+        },
+        MN: {
+           job: "Design Business Development, Principal" ,
+           company: "Duffy & Partners, Collins Design",
+           time: "Jan 1990 - Sep 1992, Sept 1992 - Dec 1995",
+           location: "Minneapolis, Minnesota",
+        }, 
+        MA: {
+           job: "🎂",
+           company: "Hometown",
+           time: "A secret number ;)",
+           location: "Lexington, Massachusetts"
+        }, 
+        NY: {
+           job: "Chief Creative Officer, Professor, National Board of Directors",
+           company: "Ogilvy(- 2008), COLLINS, SVA, The One Club for Creativity",
+           time: "Present",
+           location: "New York City, New York",
+        },
       }
     },
     computed: {
@@ -488,20 +511,19 @@ export default {
       /* HoverCity : string -> turn on Modal Window*/
       turnModalOn(City) {
         if (City == "CA") {
-          this.currentQuote = this.quotes.CA
+          this.currentQuote = this.CA
           this.ModalOn = true;
           $("#CA").addClass('current-active')
-          console.log(City + "is on", $('#CA').hasClass('can-be-active'), $('#CA').hasClass('current-active'))
         } else if (City == "MN") {
-          this.currentQuote = this.quotes.MN
+          this.currentQuote = this.MN
           this.ModalOn = true;
           $("#MN").addClass('current-active')
         } else if (City == "MA") {
-          this.currentQuote = this.quotes.MA
+          this.currentQuote = this.MA
           this.ModalOn = true;
           $("#MA").addClass('current-active')}
           else if (City == "NY") {
-          this.currentQuote = this.quotes.NY
+          this.currentQuote = this.NY
           this.ModalOn = true;
           $("#NY").addClass('current-active')}
        $('timelineMap').addClass("gradient-background")

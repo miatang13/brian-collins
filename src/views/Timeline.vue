@@ -5,17 +5,8 @@
         <h1 id = "title-text"> Where he has lead. </h1>
         <p> "I still love Design as much as when I first heard of the word." </p>
     </section>
-  </div>
 
-  <div data-aos="flip-up" data-aos-duration="2000">
-        <section id = "mapWrapper">
-            <TimelineMap :showAll = "showAll" 
-                        :checkClass = "checkClass()"
-                        />
-        </section>
-  </div>
 
-  <!-- <div data-aos="flip-up" data-aos-duration="2000"> -->
   <div id = "buttonWrapper">
         <!-- <button @click="changeView" id = "view-option">  <span> {{ buttonMessage }} </span></button> -->
         <MultiRadioButton :defaultState ="buttonState"
@@ -35,7 +26,15 @@
                           :getState = "getState"
                           @click="changeView"/>
     </div>
-    <!-- </div> -->
+    </div>
+
+  <div data-aos="flip-up" data-aos-duration="2000">
+        <section id = "mapWrapper">
+            <TimelineMap :showAll = "showAll" 
+                        :checkClass = "checkClass()"
+                        />
+        </section>
+  </div>
 
     <section id = "timelineWrapper">
         <div data-aos="fade-down" data-aos-duration="3000">
@@ -200,8 +199,9 @@ export default {
 }
 
 #buttonWrapper {
-    float: right;
-    margin-right:20%;
+    // float: right;
+    // margin-right:20%;
+    // animation: comeIn 2s linear forwards;
 }
 
 #timelineWrapper {

@@ -94,7 +94,7 @@ label {
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color:$color-grey-dark;
+    // background-color:$color-grey-dark;
 }
 
 #radio1_label {
@@ -108,17 +108,20 @@ label {
 }
 
 label#radio2_label.Medium{
-    background-color: $color-primary;
+    color: orange;
+    // color:$color-caution;
+    // background-color: $color-primary;
     transition: 0.3s;
 }
 
 label#radio1_label.Low{
-    background-color: $color-primary;
+    // background-color: $color-primary;
+    color:$color-nominal;
     transition: 0.3s;
 }
 
 label#radio3_label.High{
-    background-color: $color-primary;
+    // background-color: $color-primary;
     transition: 0.3s;
 }
 
@@ -132,6 +135,7 @@ label#radio3_label.High{
 
 #dot.nominal{
     background-color: $color-nominal;
+
 }
 
 #dot.danger{
@@ -139,7 +143,8 @@ label#radio3_label.High{
 }
 
 #dot.caution{
-    background-color: $color-caution;
+    // background-color: $color-caution;
+    background-color:orange;
 }
 
 
