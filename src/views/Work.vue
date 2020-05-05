@@ -107,7 +107,7 @@
 
             <div  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                 <div id="work-text-wrapper">
-                    <h3> 605 </h3>
+                    <h3> Spotify </h3>
                 </div>
             </div>
             
