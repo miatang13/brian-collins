@@ -25,6 +25,12 @@ export default {
     created () {
         AOS.init()
       },
+    metaInfo: {
+      title: 'Brian Collins',
+      htmlAttrs: {
+        lang: 'en',
+      }
+    }
 } 
 
 </script>
