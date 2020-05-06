@@ -27,7 +27,7 @@
         <div class = "equinox-wrapper">
             <div >
                 <section class = "workphoto-wrapper">
-                    <img src = "../assets/photos/work/equinox_1.jpg" width = "50%">
+                    <img src = "../assets/photos/work/equinox_1.jpg" width = "100%">
                 </section>
             </div>
 
@@ -64,7 +64,7 @@
         <div class = "sixofive-wrapper">
             <div>
                 <section class = "workphoto-wrapper">
-                    <img src = "../assets/photos/work/605_2.gif" width = "50%">
+                    <img src = "../assets/photos/work/605_2.gif" width = "100%">
                 </section>
             </div>
 
@@ -101,7 +101,7 @@
         <div class = "spotify-wrapper">
             <div >
                 <section class = "workphoto-wrapper">
-                    <img src = "../assets/photos/work/spotify_1.jpg" width = "50%">
+                    <img src = "../assets/photos/work/spotify_1.jpg" width = "100%">
                 </section>
             </div>
 
@@ -168,7 +168,7 @@ export default {
 }
 
 .workphoto-wrapper{
-    // overflow:hidden;
+    width: 50%;
 }
 
 .on-the-right{
@@ -228,13 +228,6 @@ export default {
     transform: rotateY(180deg);
 }
 
-@keyframes rotate{
-    from { 
-
-    } to {
-
-    }
-}
 
 .frontcard {
     position: absolute;
@@ -277,6 +270,10 @@ export default {
     }
 
     .flipcard{
+        width: 100%;
+    }
+
+    .workphoto-wrapper{
         width: 100%;
     }
 
