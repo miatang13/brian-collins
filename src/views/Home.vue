@@ -1,32 +1,13 @@
 <template>
   <div class="home">
      <div data-aos="fade-up" data-aos-duration="3000">
-      <section id = "animation-wrapper">
+      <!-- <section id = "animation-wrapper">
         <vue-p5 @setup="setup"
                 @draw="draw"> </vue-p5>
-      </section>
+      </section> -->
+      <pullQuotes />
      </div>
  
-    <section id = "pull-quotes-section">
-      <div id = "start-pullquote-wrapper" data-aos="fade-up" data-aos-duration="2000">
-        <h1 id = "pull-quotes-text"> Design, is not a plan for decoration. </h1>
-      </div>
-
-      <div data-aos="fade-up" data-aos-duration="2000">
-        <h1 id = "pull-quotes-text"> Design, is a plan for action. </h1>
-      </div>
-
-      <div data-aos="fade-up" data-aos-duration="2000">
-        <h1 id = "pull-quotes-text">  Design, is about making hope visible. </h1>
-      </div>
-
-      <div data-aos="fade-up" data-aos-duration="2000">
-        <h1 id = "pull-quotes-text">  — Brian Collins </h1>
-      </div>
-
-    </section>
-
-    
   </div>
 </template>
 
@@ -35,6 +16,7 @@
 // import AOS from 'aos'
 // import vuep5 from '@/assets/js/home-animation.js'
 import VueP5 from "vue-p5";
+import pullQuotes from '@/components/pullQuotes.vue'
 
 /* p5 declarations */
 let graphic
@@ -42,18 +24,14 @@ let graphic
 export default {
   name: "Home",
   components: {
-    "vue-p5": VueP5
-  },
-  head () {
-    return {
-      title : "Home",
-    }
+    "vue-p5": VueP5,
+    pullQuotes,
   },
   created() {
   },
   methods: {
     setup(sketch) {
-      const w = window.innerWidth - 100
+      const w = window.innerWidth - 50
       const h = window.innerHeight - 50
       sketch.createCanvas(w, h);
     },
@@ -63,7 +41,7 @@ export default {
       sketch.textSize(150);
       sketch.fill('white');
       sketch.textFont('soehne-breit');
-      sketch.textAlign(sketch.CENTER, sketch.CENTER);
+      sketch.textAlign(sketch.CENTER);
       
       /* time */
       let second = sketch.second();

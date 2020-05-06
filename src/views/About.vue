@@ -1,9 +1,10 @@
 <template>
   <div class="about">
+
     <div data-aos="fade-right" data-aos-duration="2000">
       <section id = "title-wrapper">
         <h1 id = "title-text"> Who he is. </h1>
-        <p>  One of the five  American Masters of Design, ever. </p>
+        <p>  One of the five  American Masters of Design, ever.</p>
       </section>
     </div>
     
@@ -31,14 +32,13 @@
       </section>
     </div>
 
-    <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+    <!-- <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
       <section>
       <div class = "portrait-wrapper">
-        <!-- <img :src="`${publicPath}bc_portrait_01.jpg`" > -->
         <img src = '../assets/photos/portrait/bc_portrait_01.jpg' width = "100%">
       </div>
       </section>
-    </div>
+    </div> -->
 
    <!--
     <section class = "video-wrapper">
@@ -59,6 +59,8 @@
 
 export default {
     name: "About",
+    components: {
+    },
     created () {
         // AOS.init();
         // hoverEffect.init();
@@ -94,7 +96,7 @@ export default {
   padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 70%;
+  // max-width: 70%;
 }
 
 .video-wrapper {

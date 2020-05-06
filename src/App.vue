@@ -3,10 +3,10 @@
       <div id = "app">
 
         <div id = "nav">
-          <router-link to = "/"> Home </router-link> 
-          <router-link to = "/about"> About </router-link> 
-          <router-link to = "/timeline"> Timeline </router-link> 
-          <router-link to = "/work"> Work </router-link> 
+          <router-link to = "/about"> Who </router-link> 
+          <router-link to = "/timeline"> Where </router-link> 
+          <router-link to = "/work"> What </router-link> 
+          <router-link to = "/"> Why </router-link> 
         </div>
 
         <div id = "router-view">
