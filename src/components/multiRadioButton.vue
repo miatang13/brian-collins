@@ -147,5 +147,10 @@ label#radio3_label.High{
     background-color:orange;
 }
 
+@media screen and (max-width: 600px) {
+    label {
+        font-size: 1em;
+    }
+}
 
 </style>

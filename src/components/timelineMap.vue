@@ -542,11 +542,18 @@ export default {
       },
 
       onMouseMove(event) {
-        var x = event.clientX
-        var y = event.clientY
-        document.getElementById("modal-wrapper").style.top = y + "px" ;
-        document.getElementById("modal-wrapper").style.left = x + "px" ;
-        console.log("hey im in mouseover",x, y)
+         if (window.innerWidth > 600) {
+            var x = event.clientX
+            var y = event.clientY
+            document.getElementById("modal-wrapper").style.top = y + "px" ;
+            document.getElementById("modal-wrapper").style.left = x + "px" ;
+            console.log("wondow is wide", window.innerWidth)
+            } else {
+               console.log("window is narrow")
+               const x = window.innerWidth / 2
+               document.getElementById("modal-wrapper").style.top = 200 + "px" ;
+               document.getElementById("modal-wrapper").style.left = (x/4) + "px" ;
+            }
       }
     }
 }

@@ -17,11 +17,24 @@
   </body>
 </template>
 
+<script>
+import AOS from 'aos'
+
+export default {
+    name: "About",
+    created () {
+        AOS.init()
+      },
+} 
+
+</script>
+
 <style lang="scss">
 
 /* fonts */
 @import '@/assets/styles/_colors.scss';
 @import "@/assets/styles/_reset";
+@import '@/assets/styles/aos.scss';
 
 @font-face {
     font-family: 'soehne-breit';
@@ -177,5 +190,23 @@ section {
 //       background: $color-map-active;
 //     }
 // }
+
+@media screen and (max-width: 600px) {
+  #nav {
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em,
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
 
 </style>

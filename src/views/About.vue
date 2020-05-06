@@ -11,7 +11,7 @@
       <section>
       <div class = "portrait-wrapper">
         <!-- <img :src="`${publicPath}bc_portrait_01.jpg`" > -->
-        <img src = '../assets/photos/portrait/bc_portrait_02.jpg' width = "50%">
+        <img src = '../assets/photos/portrait/bc_portrait_02.jpg' width = "100%">
       </div>
       </section>
     </div>
@@ -31,17 +31,14 @@
       </section>
     </div>
 
-    <div data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
+    <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
       <section>
       <div class = "portrait-wrapper">
         <!-- <img :src="`${publicPath}bc_portrait_01.jpg`" > -->
-        <img src = '../assets/photos/portrait/bc_portrait_01.jpg' width = "50%">
+        <img src = '../assets/photos/portrait/bc_portrait_01.jpg' width = "100%">
       </div>
       </section>
     </div>
-
-    <vue-p5 @setup="setup"
-            @draw="draw"> </vue-p5>
 
    <!--
     <section class = "video-wrapper">
@@ -55,7 +52,7 @@
 <script src="../assets/js/gsap.min.js"></script>-->
 
 <script>
-import AOS from 'aos'
+// import AOS from 'aos'
 // import TweenMax from "gsap"
 // import * as Three from 'three'
 // import hoverEffect from 'hover-effect'
@@ -63,7 +60,7 @@ import AOS from 'aos'
 export default {
     name: "About",
     created () {
-        AOS.init();
+        // AOS.init();
         // hoverEffect.init();
       },
     // data() {
@@ -92,12 +89,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_colors.scss';
-@import '@/assets/styles/aos.scss';
-
-// .about {
-//   background-color:white;
-// }
 
 .body-text-wrapper {
   padding-top: 50px;
@@ -115,7 +106,7 @@ export default {
 
 .portrait-wrapper {
     // height: 500px;
-    margin-left: 400px;
+    // margin-left: 400px;
  }
 
 @keyframes comeIn { 
@@ -126,5 +117,15 @@ export default {
         opacity: 100%;
         }
     }
+
+@media screen and (max-width: 600px) {
+  .body-text-wrapper {
+    max-width: 100%;
+  }
+
+  .portrait-wrapper{
+    margin-left: 0px;
+  }
+}
 
 </style>

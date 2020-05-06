@@ -139,18 +139,15 @@
 </template>
 
 <script>
-import AOS from 'aos'
 
 export default {
     name: "About",
     created () {
-        AOS.init()
       },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/aos.scss';
 
 .overlay-text-wrapper-01 {
     position: --webkit-sticky; /* Safari & IE */
@@ -231,6 +228,14 @@ export default {
     transform: rotateY(180deg);
 }
 
+@keyframes rotate{
+    from { 
+
+    } to {
+
+    }
+}
+
 .frontcard {
     position: absolute;
     backface-visibility: hidden;
@@ -244,5 +249,37 @@ export default {
     transform: rotateY(180deg);
 }
 
+#dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right:4px;
+}
+
+@media screen and (max-width: 600px) {
+    .overlay-text-wrapper-01 {
+        position: --webkit-sticky; /* Safari & IE */
+        position: sticky;
+        top: 0;
+    }
+
+    .overlay-text-wrapper-02 {
+        position: --webkit-sticky; /* Safari & IE */
+        position: sticky;
+        top: 115px;
+    }
+
+    .overlay-text-wrapper-03 {
+        position: --webkit-sticky; /* Safari & IE */
+        position: sticky;
+        top: 195px;
+    }
+
+    .flipcard{
+        width: 100%;
+    }
+
+}
 
 </style>

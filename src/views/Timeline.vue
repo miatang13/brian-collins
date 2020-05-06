@@ -132,7 +132,7 @@ import MultiRadioButton from '@/components/multiRadioButton.vue'
 import TimelineBlock from '@/components/timelineBlock.vue'
 
 // import $ from "query"
-import AOS from "aos"
+// import AOS from "aos"
 
 export default {
     name: "Timeline",
@@ -142,7 +142,6 @@ export default {
         TimelineBlock,
     },
     created () {
-        AOS.init()
     },
     data () {
         return {
@@ -185,13 +184,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_colors.scss';
-@import '@/assets/styles/aos.scss';
-
-
-// .timeline{
-//     animation: comeIn 3s ease-in-out 0s;
-// }
 
 #mapWrapper {
     padding-top: 0;
@@ -216,5 +208,19 @@ export default {
         opacity: 100%;
         }
     }
+
+@media screen and (max-width: 600px) {
+    #buttonWrapper {
+        // padding-top: 130px;
+    }
+    #mapWrapper {
+        padding-top: 110px;
+    }
+
+    #timelineWrapper {
+        padding-top: 350px;
+    }
+
+}
 
 </style>

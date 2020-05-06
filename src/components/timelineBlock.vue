@@ -85,5 +85,14 @@ $max-width: 280px;
     }
 }
 
+@media screen and (max-width: 600px) {
+    .left, .middle, .right {
+        margin-left: 0;
+        overflow: hidden;
+        float: left;
+        padding-bottom: 50px;
+    }
+}
+
 
 </style>

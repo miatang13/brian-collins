@@ -32,7 +32,7 @@
 
 <script>
 // @ is an alias to /src
-import AOS from 'aos'
+// import AOS from 'aos'
 // import vuep5 from '@/assets/js/home-animation.js'
 import VueP5 from "vue-p5";
 
@@ -50,7 +50,6 @@ export default {
     }
   },
   created() {
-    AOS.init()
   },
   methods: {
     setup(sketch) {
@@ -95,8 +94,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_colors.scss';
-@import '@/assets/styles/aos.scss';
 
 #place-holder-text {
   font-size:100px;
@@ -155,6 +152,11 @@ export default {
   // transform: translate(-50%, -50%);
 }
 
-
+@media screen and (max-width: 600px){
+  #pull-quotes-text{
+    font-size: 2em;
+    padding: 25px 0 25px 0;
+  }
+}
 
 </style>
