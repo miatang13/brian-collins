@@ -543,8 +543,8 @@ export default {
 
       onMouseMove(event) {
          if (window.innerWidth > 600) {
-            var x = event.clientX
-            var y = event.clientY
+            const x = event.clientX
+            const y = event.clientY
             document.getElementById("modal-wrapper").style.top = y + "px" ;
             document.getElementById("modal-wrapper").style.left = x + "px" ;
             console.log("wondow is wide", window.innerWidth)

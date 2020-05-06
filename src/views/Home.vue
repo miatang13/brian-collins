@@ -53,18 +53,18 @@ export default {
   },
   methods: {
     setup(sketch) {
-      sketch.createCanvas(1100, 500);
+      const w = window.innerWidth - 100
+      const h = window.innerHeight - 50
+      sketch.createCanvas(w, h);
     },
     draw(sketch) {
       sketch.background('black');
-
       /* text styling */
       sketch.textSize(150);
       sketch.fill('white');
       sketch.textFont('soehne-breit');
       sketch.textAlign(sketch.CENTER, sketch.CENTER);
       
-
       /* time */
       let second = sketch.second();
       let minute = sketch.minute();
@@ -74,8 +74,15 @@ export default {
 
       if (sketch.frameCount > 150) {
          sketch.background('black');
-         sketch.textSize(80);
-         sketch.text("Are you trying your best?", sketch.width/2, sketch.height/2)
+         if (window.innerWidth > 600) {
+              sketch.textSize(70);
+              sketch.text("Are you trying your best?", sketch.width/2, sketch.height/2);
+            }
+         else {
+              const textSize = window.innerWidth / 15;
+              sketch.textSize(textSize);
+              sketch.text("Are you \n trying your best?", sketch.width/2, sketch.height/2);
+          }
       }
 
       // sketch.ellipse(sketch.mouseX, sketch.mouseY, 55, 55);
