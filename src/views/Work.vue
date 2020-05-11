@@ -265,31 +265,6 @@ export default {
 
 
 @media screen and (max-width: 600px) {
-    .flipcard{
-        width: 100%;
-    }
-
-    .workphoto-wrapper{
-        width: 100%;
-    }
-
-    #right-photo-wrapper {
-        margin-left: 0px;
-    }
-
-    #work-text-wrapper{
-        margin-left: 0px;
-        padding: 0px;
-    }
-
-    .flipcard{
-        margin-left: 0px;
-        border: none;
-    }
-
-    .backcard{
-        width: 100%;
-    }
 
     .overlay-text-wrapper-01 {
         position: --webkit-sticky; /* Safari & IE */
@@ -309,6 +284,33 @@ export default {
         top: 195px;
     }
 
+    .flipcard{
+        width: 100%;
+        margin-left: 0px;
+        border: none;
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 300px;
+    }
+
+    .backcard{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+
+    .workphoto-wrapper{
+        width: 100%;
+    }
+
+    #right-photo-wrapper {
+        margin-left: 0px;
+    }
+
+    #work-text-wrapper{
+        margin-left: 0px;
+        padding: 0px;
+    }
 }
 
 </style>
