@@ -63,7 +63,7 @@
 
         <div class = "sixofive-wrapper">
             <div>
-                <section class = "workphoto-wrapper">
+                <section class = "workphoto-wrapper" id = "right-photo-wrapper">
                     <img src = "../assets/photos/work/605_2.gif" width = "100%">
                 </section>
             </div>
@@ -213,15 +213,23 @@ export default {
       } }
 }
 
+#work-text-wrapper{
+    padding: 50px;
+    margin-left: 200px;
+}
+
 .flipcard-wrapper{
     position: relative;
 }
 
 .flipcard{
     transform-style: preserve-3d;
+    padding: 50px;
     padding-bottom: 500px;
     transition: all 1.2s ease-in-out;
     width: 50%;
+    border: solid 1px white;
+    margin-left: 200px;
 }
 
 .flipcard:hover {
@@ -237,8 +245,9 @@ export default {
 
 .backcard{
     position: absolute;
+    padding-left: 200px;
     backface-visibility:hidden;
-    width: 100%;
+    width: 75%;
     transform: rotateY(180deg);
 }
 
@@ -250,7 +259,38 @@ export default {
     margin-right:4px;
 }
 
+#right-photo-wrapper {
+    margin-left: 600px;
+}
+
+
 @media screen and (max-width: 600px) {
+    .flipcard{
+        width: 100%;
+    }
+
+    .workphoto-wrapper{
+        width: 100%;
+    }
+
+    #right-photo-wrapper {
+        margin-left: 0px;
+    }
+
+    #work-text-wrapper{
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    .flipcard{
+        margin-left: 0px;
+        border: none;
+    }
+
+    .backcard{
+        width: 100%;
+    }
+
     .overlay-text-wrapper-01 {
         position: --webkit-sticky; /* Safari & IE */
         position: sticky;
@@ -267,14 +307,6 @@ export default {
         position: --webkit-sticky; /* Safari & IE */
         position: sticky;
         top: 195px;
-    }
-
-    .flipcard{
-        width: 100%;
-    }
-
-    .workphoto-wrapper{
-        width: 100%;
     }
 
 }
