@@ -480,26 +480,26 @@ export default {
         ModalOn: false,
         currentQuote: null,
         CA: {
-            job: "Advisory Board for Graduate Design Program",
-            company: "@ ArtCenter College of Design",
-            time: "Jan 2016-Present",
+            job: "Advisory, Professor, Creative Director",
+            company: "@ ArtCenter College of Design, California College of the Arts, FCB Global",
+            time: "Jan 2016-Present, 1996 - 1998, 1995 - 1998",
             location: "Pasadena, California"
         },
         MN: {
            job: "Design Business Development, Principal" ,
-           company: "Duffy & Partners, Collins Design",
+           company: "@ Duffy & Partners, Collins Design",
            time: "Jan 1990 - Sep 1992, Sept 1992 - Dec 1995",
            location: "Minneapolis, Minnesota",
         }, 
         MA: {
            job: "🎂",
            company: "Hometown",
-           time: "A secret number ;)",
+           time: "@ A secret number ;)",
            location: "Lexington, Massachusetts"
         }, 
         NY: {
            job: "Chief Creative Officer, Professor, National Board of Directors",
-           company: "Ogilvy(- 2008), COLLINS, SVA, The One Club for Creativity",
+           company: "@ COLLINS, SVA, The One Club for Creativity, Ogilvy(- 2008)",
            time: "Present",
            location: "New York City, New York",
         },

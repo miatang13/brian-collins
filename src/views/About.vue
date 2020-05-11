@@ -8,7 +8,7 @@
       </section>
     </div>
     
-    <div data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
       <section>
       <div class = "portrait-wrapper">
         <!-- <img :src="`${publicPath}bc_portrait_01.jpg`" > -->

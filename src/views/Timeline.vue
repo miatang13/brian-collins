@@ -6,7 +6,6 @@
         <p> "I still love Design as much as when I first heard of the word." </p>
     </section>
 
-
   <div id = "buttonWrapper">
         <!-- <button @click="changeView" id = "view-option">  <span> {{ buttonMessage }} </span></button> -->
         <MultiRadioButton :defaultState ="buttonState"
@@ -36,112 +35,38 @@
         </section>
   </div>
 
-    <section id = "timelineWrapper">
-        <div data-aos="fade-down" data-aos-duration="3000">
-            <section> 
-                <TimelineBlock :givenContent = "[{ 
-                                                company: 'Duffy and Partners',
-                                                job: 'Design, Business Development',
-                                                year: '1990 – 1992'
-                                            }]"
-                            :location = "'middle'"
-                        />
-            </section>
-        </div>
+  <TimelineBlockS />
+<!-- 
+ <section>
+  <tabs>
+    <tab title="Vue">
+      This is Vue
+    </tab>
+    <tab title="React">
+      This is React
+    </tab>
+    <tab title="Svelte">
+      This is Svelte
+    </tab>
+  </tabs>
+  </section> -->
 
-        <div data-aos="fade-right" data-aos-duration="3000">
-            <section>
-                <TimelineBlock :givenContent = "[{ 
-                                                company: 'Collins Design',
-                                                job: 'Principal',
-                                                year: '1992 – 1995'
-                                            }]"
-                            :location = "'left'"
-                        />
-            </section>
-        </div>
-
-        <div data-aos="fade-left" data-aos-duration="3000">
-            <section>
-                <TimelineBlock :givenContent = "[{ 
-                                            company: 'Foote, Cone & Belding ',
-                                            job: 'Creative Director',
-                                            year: '1995 – 1998'
-                                        }]"
-                        :location = "'middle'"
-                        />
-            </section>
-        </div>
-
-        <div data-aos="fade-right" data-aos-duration="3000">
-            <section>
-                <TimelineBlock :givenContent = "[{ 
-                                            company: 'Ogilvy',
-                                            job: 'Chief Creative Director',
-                                            year: '1998 – 2008'
-                                        }]"
-                        :location = "'right'"
-                        />
-            </section> 
-        </div>
-
-        <div data-aos="fade-left" data-aos-duration="3000">
-            <section>
-                <TimelineBlock :givenContent = "[{ 
-                                        company: 'School of Visual Arts',
-                                        job: 'Professor',
-                                        year: '2001 – Present'
-                                    }]"
-                    :location = "'left'"
-                    />
-            </section>
-        </div>
-
-        <div data-aos = "fade-up" data-aos-duration="3000">
-            <section>
-                <TimelineBlock :givenContent = "[{ 
-                                        company: 'The One Club for Creativity',
-                                        job: 'Officer',
-                                        year: '2002 – Present'
-                                    }]"
-                    :location = "'right'"
-                    />
-            </section>
-        </div>
-
-         <div data-aos = "fade-down" data-aos-duration="3000">
-            <section>
-                <TimelineBlock :givenContent = "[{ 
-                                        company: 'COLLINS',
-                                        job: 'Co-Founder / Chief Creative Officer',
-                                        year: '2008 – Present'
-                                    }]"
-                    :location = "'middle'"
-                    />
-            </section>
-        </div>
-
-
-    </section>
   </div>
 </template>
 
 <script>
 import TimelineMap from '@/components/timelineMap.vue'
 import MultiRadioButton from '@/components/multiRadioButton.vue'
-import TimelineBlock from '@/components/timelineBlock.vue'
-
-// import $ from "query"
-// import AOS from "aos"
+import TimelineBlockS from '@/components/timelineBlockS.vue'
+// import { Tabs, Tab } from 'vue-slim-tabs'
 
 export default {
     name: "Timeline",
     components: {
         TimelineMap,
         MultiRadioButton,
-        TimelineBlock,
-    },
-    created () {
+        TimelineBlockS,
+        // Tabs, Tab
     },
     data () {
         return {
@@ -184,6 +109,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../node_modules/vue-slim-tabs/themes/default.css';
 
 #mapWrapper {
     padding-top: 0;
@@ -194,10 +120,6 @@ export default {
     // float: right;
     // margin-right:20%;
     // animation: comeIn 2s linear forwards;
-}
-
-#timelineWrapper {
-    padding-top: 200px;
 }
 
 @keyframes comeIn { 
