@@ -2,13 +2,16 @@
   "name": "bc-app",
   "version": "0.1.0",
   "private": true,
+  "start": "node server.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.4",
+    "express": "^4.17.1",
     "gsap": "^3.2.6",
     "hover-effect": "^1.1.0",
     "http-server": "^0.12.3",
@@ -27,7 +30,7 @@
     "@vue/cli-plugin-router": "^4.3.0",
     "@vue/cli-plugin-vuex": "^4.3.0",
     "@vue/cli-service": "^4.3.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "three": "^0.116.1",
     "vue-template-compiler": "^2.6.11",

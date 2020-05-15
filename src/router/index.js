@@ -57,33 +57,5 @@ export default router;
 
 
 
-/* NOT USING 
-
-import Profile from  "../views/Profile.vue";
-import Info from "../views/Info.vue";
-
-  {
-    path: "/profile",
-    name: "Profile",
-    component: Profile
-  },*/
-
-  /* dynamic route, can pass parameters into a route 
-  {
-    path: "/profile/:id",
-    name: "Profile",
-    component: Profile,
-    /* child route needs "<router-view /> " in the vue file 
-    children:[
-      {
-        path:'info',
-        name:"Info",
-        component: Info
-      }
-    ]
-  },
-  ,
-  
-*/
 
 
