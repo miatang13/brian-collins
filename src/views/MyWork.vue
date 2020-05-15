@@ -190,7 +190,7 @@ export default {
     padding: 0;
     max-height: 50000px;
     overflow: hidden;
-    transition: 3s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .is-closed .accordian-body{
