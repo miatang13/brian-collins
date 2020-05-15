@@ -13,7 +13,8 @@
                 Brian Collins, and the team of designers who call themselves 
                 the COLLINS, create communications, products, and environments that 
                 transform brands, drive business, and improve people’s lives. COLLINS is an 
-                independent strategy and brand experience design company based in New York.  </p>
+                independent strategy and brand experience design company based in New York.  <br>  <br> </p>
+            <router-link to = "/designhero" style = "color: grey;">  My Work About Him &#8600; </router-link> 
         </div>
 
         <div class = "overlay-text-wrapper-01">
@@ -134,7 +135,6 @@
             </div>
         </div>
 
-
     </div>
 </template>
 
@@ -148,6 +148,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+#about-collins-wrapper {
+    max-width: 60%;
+}
 
 .overlay-text-wrapper-01 {
     position: --webkit-sticky; /* Safari & IE */
@@ -265,6 +269,10 @@ export default {
 
 
 @media screen and (max-width: 600px) {
+
+    #about-collins-wrapper{
+        max-width: 100%;
+    }
 
     .overlay-text-wrapper-01 {
         position: --webkit-sticky; /* Safari & IE */

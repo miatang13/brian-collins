@@ -40,11 +40,6 @@
       </section>
     </div> -->
 
-   <!--
-    <section class = "video-wrapper">
-      <iframe width="800px" height="500px" src="https://www.youtube.com/embed/bjSEofi5JoY"> </iframe>
-    </section> -->
-
   </div>
 </template>
 
@@ -96,7 +91,7 @@ export default {
   padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  // max-width: 70%;
+  max-width: 60%;
 }
 
 .video-wrapper {

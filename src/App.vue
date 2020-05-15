@@ -172,6 +172,7 @@ a {
       to {
         background-position: 200% center;
       } }
+  padding-bottom: 10px;
 }
 
 /* section does not clash with nav, leaves space in between */ 

@@ -33,6 +33,12 @@ const routes = [
     component: () =>
      import("../views/Work.vue")
   },
+  {
+    path: "/designhero",
+    name: "DesignHero",
+    component: () =>
+     import("../views/MyWork.vue")
+  },
   /* 404 route, navigate to this if no route is matched */
   {
     path: "*",
