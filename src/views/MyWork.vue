@@ -193,6 +193,7 @@ export default {
     transition: 1s ease-in-out;
 }
 
+
 .is-closed .accordian-body{
      max-height: 0;
 }
