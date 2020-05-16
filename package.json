@@ -2,10 +2,10 @@
   "name": "designhero-briancollins",
   "version": "0.1.0",
   "private": true,
-  "start": "node server.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "node server.js"
   },
   "dependencies": {
     "aos": "^2.3.4",
