@@ -74,7 +74,7 @@
 
             <div class = "accordian-body">
                 <div id = "video-wrapper">
-                    <iframe src="https://player.vimeo.com/video/417075228" width = "640" height = "360" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/419170346" width = "640" height = "360" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -91,6 +91,45 @@
                  <router-link to = "/" style = "color: grey;">  Enter Web Experience &#8600; </router-link>
             </div>
         </div>
+        
+        <div class = "accrodian" v-bind:class = "essayClasses" >
+            <div class = "accordian-header" @click = "toggleEssay">
+                <h2> Why Him? </h2>
+                <p> Short essay on why Brian Collins is my design hero. </p>
+            </div>
+
+            <div class = "accordian-body">
+                <div class = "essay-wrapper">
+                    <p> First, he is undoubtedly a design icon, a design master of the century. His 
+                        work in the field of branding has defined and redefined trends, styles, and 
+                        encouraged further exploration and creativity. <br><br>
+                        Secondly, and most importantly, he greatly values knowledge of many kinds. 
+                        He encourages people to be great designers with a secret super power. “We expect 
+                        everyone to have a second secret ‘superpower,’ so to speak. Hybrids.” When looking at 
+                        candidates, he said that he “love to hire great people who are also remarkable 
+                        at something else — it could be coding or writing, but it could just as easily 
+                        be cooking, science fiction, scuba diving, biking, singing, painting, Taekwondo...anything. 
+                        I believe those collisions expand us.” <br> <br>    
+                        This truly resonates with me because I have a hard time defining myself 
+                        with one word, a ____ designer. <br> <br>    
+                        I know I am not just that. <br><br>    
+                        I want to be more, and I firmly believe that by being more, 
+                        I can be a better designer curating better designs. <br><br>    
+                        I will end with my favorite quote from him that talks what design means to him. <br>   <br>    
+
+                        “Look, design is not about what we do. Design, for us, is about what we encourage and enable others to do. For us, it’s about building tools, environments and communications
+                        that help other people make meaningful things possible. <br><br>    
+
+                        "Design should enable people to do whatever they need or want to do with their time. 
+                        Time itself is the most valuable asset anyone has. Money, objects — you can 
+                        get all of that back. Time is irreplaceable. So, we work to fill and inform 
+                        the time people give us with clarity, understanding, support or joy.<br><br>    
+
+                        "The way I see it, it’s a moral transaction. Did that client get your very best in that transaction? Did their customers get the finest you can do? Did you give them the best you had? Or did you fizzle out, or give up when it got difficult?”
+                        </p>
+                    </div> <!-- essay wrapper -->
+                </div>
+            </div>
     </div> <!-- aos transition container -->
 
 </div> <!-- big container -->
@@ -107,6 +146,7 @@ export default {
             mWisOpen: false,
             bookletSpreadisOpen: false,
             bookletSelectedisOpen: false,
+            essayisOpen: false,
         }
     },
     methods: {
@@ -133,6 +173,9 @@ export default {
         toggleBookletSpread() {
             this.bookletSpreadisOpen = !this.bookletSpreadisOpen;
         },
+        toggleEssay() {
+            this.essayisOpen = !this.essayisOpen;
+        }
     },
     computed: {
         posterClasses: function () {
@@ -163,6 +206,11 @@ export default {
         bookletspreadClasses: function () {
             return {
                 'is-closed' : !this.bookletSpreadisOpen,
+            }
+        },
+        essayClasses: function () {
+            return {
+                'is-closed' : !this.essayisOpen,
             }
         }
         }
@@ -198,11 +246,17 @@ export default {
      max-height: 0;
 }
 
+.essay-wrapper{
+    max-width: 60%;
+}
 
 @media screen and (max-width: 600px) {
     #about-work-wrapper {
         max-width: 100%;
-}
+       }
+    .essay-wrapper {
+        max-width:100%;
+    }
 
 }
 
