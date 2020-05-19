@@ -3,7 +3,7 @@
         <div data-aos="fade-right" data-aos-duration="2000">
             <section id = "title-wrapper">
                 <h1 id = "title-text"> Design Hero </h1>
-                <p> Five months of work to celebrate the design hero — Brian Collins — I look up to. </p>     
+                <p> A semester’s worth of work celebrating Brian Collins — my design hero. </p>     
             </section>
         </div>
 
@@ -18,7 +18,8 @@
                 <img src = '@/assets/photos/mywork/poster/poster_2.png' width = "100%">
                 <img src = '@/assets/photos/mywork/poster/45-wavy.png' width = "100%">
                 <img src = '@/assets/photos/mywork/poster/45-rolled.png' width = "100%">
-                <p> 19.25(w) x 31.75(h)  </p>
+                <p> 19.25(w) x 31.75(h) </p>
+                <!-- <span class = "close-span" @click = "closePoster"> &#8632; Close </span> -->
             </div>
         </div>
 
@@ -175,6 +176,10 @@ export default {
         },
         toggleEssay() {
             this.essayisOpen = !this.essayisOpen;
+        },
+        closePoster () {
+            togglePoster();
+            window.scrollTo(0,50);
         }
     },
     computed: {
@@ -218,6 +223,10 @@ export default {
 </script>
 
 <style scoped>
+.close-span {
+    cursor: pointer;
+}
+
 #about-work-wrapper {
     max-width: 60%;
 }
@@ -236,9 +245,9 @@ export default {
 
 .accordian-body {
     padding: 0;
-    max-height: 50000px;
+    max-height: 10000px;
     overflow: hidden;
-    transition: 1s ease-in-out;
+    transition: 2s ease-in-out;
 }
 
 

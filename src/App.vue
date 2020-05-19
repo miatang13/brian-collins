@@ -12,7 +12,7 @@
         <div id = "router-view">
           <router-view />
         </div>
-
+    
       </div>
   </body>
 </template>
@@ -62,6 +62,10 @@ export default {
 
 
 /* structure */
+footer {
+  padding:5%;
+  color: $color-grey;
+}
 
 body {
   background-color: $color-background;
