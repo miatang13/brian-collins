@@ -130,7 +130,14 @@
                         </p>
                     </div> <!-- essay wrapper -->
                 </div>
-            </div>
+            </div> <!-- essay accoridan wrapper --> 
+        
+        <div class = "contact" >
+            <p> My Contact </p>
+            <a href = "https://www.linkedin.com/in/mia-tang-116221190/"> LinkedIn </a> <br>
+            <a href = "mailto:miatang13@gmail.com"> Email </a>
+        </div>
+
     </div> <!-- aos transition container -->
 
 </div> <!-- big container -->
@@ -223,6 +230,11 @@ export default {
 </script>
 
 <style scoped>
+.contact {
+    color: white;
+    padding-top: 50px;
+}
+
 .close-span {
     cursor: pointer;
 }
