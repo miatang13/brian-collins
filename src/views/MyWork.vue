@@ -93,7 +93,7 @@
             </div>
         </div>
 
-
+<!--
         <div class = "accrodian" v-bind:class = "randomClasses" >
             <div class = "accordian-header" @click = "toggleRandom">
                 <h2> More Images </h2>
@@ -103,7 +103,8 @@
                 <img src = '@/assets/photos/mywork/booklet/booklet.gif' width = "100%">
             </div>
         </div>
-        
+-->
+
         <div class = "accrodian" v-bind:class = "essayClasses" >
             <div class = "accordian-header" @click = "toggleEssay">
                 <h2> Why Him? </h2>

@@ -39,6 +39,12 @@ const routes = [
     component: () =>
      import("../views/MyWork.vue")
   },
+  {
+    path: "/extraImages",
+    name: "ExtraImages",
+    component: () =>
+     import ("../views/ExtraImages.vue")
+  },
   /* 404 route, navigate to this if no route is matched */
   {
     path: "*",
