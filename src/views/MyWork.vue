@@ -92,6 +92,17 @@
                  <router-link to = "/" style = "color: grey;">  Enter Web Experience &#8600; </router-link>
             </div>
         </div>
+
+
+        <div class = "accrodian" v-bind:class = "randomClasses" >
+            <div class = "accordian-header" @click = "toggleRandom">
+                <h2> More Images </h2>
+            </div>
+
+            <div class = "accordian-body">
+                <img src = '@/assets/photos/mywork/booklet/booklet.gif' width = "100%">
+            </div>
+        </div>
         
         <div class = "accrodian" v-bind:class = "essayClasses" >
             <div class = "accordian-header" @click = "toggleEssay">
@@ -155,6 +166,7 @@ export default {
             bookletSpreadisOpen: false,
             bookletSelectedisOpen: false,
             essayisOpen: false,
+            randomisOpen: false,
         }
     },
     methods: {
@@ -183,6 +195,9 @@ export default {
         },
         toggleEssay() {
             this.essayisOpen = !this.essayisOpen;
+        },
+        toggleRandom(){
+            this.randomisOpen = !this.randomisOpen;
         },
         closePoster () {
             togglePoster();
@@ -223,6 +238,11 @@ export default {
         essayClasses: function () {
             return {
                 'is-closed' : !this.essayisOpen,
+            }
+        },
+        randomClasses: function (){
+            return {
+                'is-closed' : !this.randomisOpen,
             }
         }
         }
