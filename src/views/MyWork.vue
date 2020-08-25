@@ -93,7 +93,7 @@
             </div>
         </div>
 
-<!--
+<!-- 
         <div class = "accrodian" v-bind:class = "randomClasses" >
             <div class = "accordian-header" @click = "toggleRandom">
                 <h2> More Images </h2>
