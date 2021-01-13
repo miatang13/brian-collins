@@ -1,19 +1,4 @@
 # Brian Collins Biography Website
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Project About
+This project involves creating an informational biography website for a specific designer, using visual hiearchy and motion to curate pleasing experience. The main challenge is displaying substantial amount of information in a clean and engaging manner.
