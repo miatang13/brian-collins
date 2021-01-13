@@ -1,4 +1,4 @@
-# bc-app
+# Brian Collins Biography Website
 
 ## Project setup
 ```
