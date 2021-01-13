@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "soehne-breit";
+  src: url("../src/assets/styles/fonts/soehne-breit-web-kraftig.woff")
+      format("woff"),
+    url("../src/assets/styles/fonts/soehne-breit-web-kraftig.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "soehne";
+  src: url("../src/assets/styles/fonts/soehne-web-kraftig.woff") format("woff"),
+    url("../src/assets/styles/fonts/soehne-web-kraftig.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "soehne-buch";
+  src: url("../src/assets/styles/fonts/soehne-web-buch.woff") format("woff"),
+    url("../src/assets/styles/fonts/soehne-web-buch.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "soehne-breit";
+  src: url("/../briancollins/src/assets/styles/soehne-breit-web-kraftig.woff")
+      format("woff"),
+    url("/../briancollins/src/assets/styles/soehne-breit-web-kraftig.woff2")
+      format("woff2");
+}
