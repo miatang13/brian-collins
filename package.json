@@ -17,7 +17,7 @@
     "http-server": "^0.12.3",
     "jquery": "^3.5.1",
     "p5": "^1.2.0",
-    "three": "^0.116.1",
+    "three": "^0.137.0",
     "vue": "^2.6.12",
     "vue-meta": "^2.4.0",
     "vue-p5": "^0.8.3",
@@ -32,7 +32,7 @@
     "@vue/cli-service": "^4.5.10",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.1.1",
-    "three": "^0.116.1",
+    "three": "^0.137.0",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.46.0",
     "ecstatic": ">=4.1.4"
